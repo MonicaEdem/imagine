@@ -67,5 +67,25 @@ const bottle1 = {
   }
   
 
+  // Functions
+// Defining a function
+function login(username, password) {
+  // validate the username and password ! means NOT, || means OR 
+  if (!username || !password) {
+    return 'username or password not provided';
+  }
+  // verify username and password
+ if (username == 'monica' && password == '1234') {
+    return 'user is logged in';
+ } else {
+   return 'invalid username or password'
+ }
+}
+//Invoking a functions 
+login('monica',);
+
+// Basic Arithmetic Operations
+23/2;
+5%2;
 
 
