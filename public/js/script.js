@@ -87,5 +87,38 @@ login('monica',);
 // Basic Arithmetic Operations
 23/2;
 5%2;
+// Strings in javascript
+// concatenation
+const firstname = 'Monica';
+const lastname = 'Kokovena';
+const middlename = ''
+firstname + ' '+ middlename+' ' + lastname;
+
+// Template literal
+`${firstname} ${middlename} ${lastname}`;
+
+// String Methods
+// Length Method
+let fullName = 'Monica Edem Kokovena'
+fullName.length
+
+
+fullName.toUpperCase()
+fullName.toLowerCase()
+fullName.charAt(7 )
+fullName.slice(0,6)
+// count from 0 and exclusive of the last number/letter selected
+fullName.split('')
+fullName.replace('Edem','Yemisi')
+fullName.indexOf('vena')
+
+// String 
+Number('3.243')
+parseInt('3.243')
+parseFloat('3.243')
+let amount = 200000
+amount.toString()
+console.log(`GHS ${amount}`)
+
 
 
