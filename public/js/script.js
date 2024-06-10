@@ -105,7 +105,7 @@ fullName.length
 
 fullName.toUpperCase()
 fullName.toLowerCase()
-fullName.charAt(7 )
+fullName.charAt(7)
 fullName.slice(0,6)
 // count from 0 and exclusive of the last number/letter selected
 fullName.split('')
@@ -119,6 +119,42 @@ parseFloat('3.243')
 let amount = 200000
 amount.toString()
 console.log(`GHS ${amount}`)
+
+
+
+// Write a function that will add a participant to our google classroom
+const participants = [];
+function addParticipant(email) {
+  // check if email was provided
+  if(!email){
+    return 'No email provided';
+  }
+  // check if email is valid
+  if (!email.includes('@')){
+      return 'Invalid email provided';
+      }
+  // add email to participants
+  participants.push(email);
+  return 'Participant added';
+}
+
+addParticipant('yemisivena@gmail.com');
+addParticipant('abela@gmail.com')
+participants;
+   
+// arrays in javascript
+const users =[
+ { username: 'monicaEdem',
+  password: '1234',
+  email: 'monicaekokovena@gmail.com'},
+  
+  { username: 'yemisiVena',
+  password: '5678',
+  email: 'abela@gmail.com'
+  }
+]
+
+
 
 
 
