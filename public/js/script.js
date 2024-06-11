@@ -143,16 +143,99 @@ addParticipant('abela@gmail.com')
 participants;
    
 // arrays in javascript
-const users =[
- { username: 'monicaEdem',
-  password: '1234',
-  email: 'monicaekokovena@gmail.com'},
+// const users =[
+//  { username: 'monicaEdem',
+//   password: '1234',
+//   email: 'monicaekokovena@gmail.com'},
   
-  { username: 'yemisiVena',
-  password: '5678',
-  email: 'abela@gmail.com'
+//   { username: 'yemisiVena',
+//   password: '5678',
+//   email: 'abela@gmail.com'
+//   }
+// ]
+
+// Write a function that will add a participant to our google classroom
+
+// const participants = [];
+// function addParticipant(email) {
+//   // check if email was provided
+//   if (!email) {
+//     return "No email provided";
+//   }  // check if email is valid
+//   if (!email.includes("@")) {
+//     return "Invalid email provided";
+//   }
+//   // add email to participants
+//   participants.push(email);
+//   return "Participant added";
+// }
+
+addParticipant("yemisivena@gmail.com");
+addParticipant("abela@gmail.com");
+participants;
+
+// arrays in javascript
+const users = [
+  {
+    username: "monicaEdem",
+    password: "1234",
+    email: "monicaekokovena@gmail.com",
+  },
+
+  { username: "yemisiVena", password: "5678", email: "abela@gmail.com" },
+];
+
+// Write a function that will take a user with firstname, lastname and return fullname(...means spread)
+
+
+function fullName(user){
+  return {
+    ...user, 
+    fullName: `${user.firstname} ${user.lastname}`
+ 
   }
+}
+const user= {
+  firstname: 'Monica',
+  lastname: 'Kokovena'
+}
+fullName(user);
+
+// Array map
+  const Users = [
+  {firstname:'Monica', lastname:'Kokovena'},
+  {firstname:'Valerine', lastname:'Norvinyo'},
+  {firstname:'Leah', lastname:'Appiah-Kubi'},
+  {firstname:'Abele', lastname:'Okoro'},
+   {firstname:'Oko', lastname:'Mensah'}  
 ]
+  // Users.map(fullName);
+
+// Square of numbers
+function square(number) {
+  return number**2;
+  
+}
+square(2);
+
+const numbers= [2,4,1,3];
+numbers.map(square);
+
+
+//Array filter
+
+function isEven(number) {
+   
+  return number % 2===0;  
+}
+isEven(5);
+number.filter(isEven)
+            
+        
+
+
+
+
 
 
 
