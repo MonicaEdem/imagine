@@ -230,6 +230,70 @@ function isEven(number) {
 }
 isEven(5);
 number.filter(isEven)
+
+
+
+// Write a function that will allow a user to reset their password
+
+// const user = {
+//   email:'yemisivena@gmail.com',
+//   password: '1234'
+// }
+
+function resetPassword(email, newPassword){
+  // check if email and new password was provided
+  
+  if (!email || !newPassword){
+    return 'Email or password not provided';
+  }
+   // check if provided email is correct
+  if (email===user.email){
+    // update password with new one
+    user.password = newPassword;
+    return 'Password reset successful';
+  }
+  if (email !== user.email){
+    return 'Invalid email';
+  }
+
+}
+
+user;
+resetPassword('monicaekokovena@gmail.com')
+resetPassword('yemisivena@gmail.com','0987')
+user
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+        
+
+
+
+
+
             
         
 
